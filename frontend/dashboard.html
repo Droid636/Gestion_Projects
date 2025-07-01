@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>Mis Proyectos</h2>
+  <button onclick="logout()">Cerrar sesión</button>
+  <ul id="projectList"></ul>
+  <h3>Crear nuevo proyecto</h3>
+  <form id="projectForm">
+    <input type="text" id="projectName" placeholder="Nombre del proyecto" required />
+    <input type="text" id="projectDesc" placeholder="Descripción" required />
+    <button type="submit">Crear</button>
+  </form>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

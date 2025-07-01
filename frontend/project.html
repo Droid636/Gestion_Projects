@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Proyecto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2 id="projectTitle"></h2>
+  <p id="projectDesc"></p>
+
+  <h3>Tareas</h3>
+  <ul id="taskList"></ul>
+
+  <h3>Agregar Tarea</h3>
+  <form id="taskForm">
+    <input type="text" id="taskTitle" placeholder="Título" required />
+    <select id="taskPriority">
+      <option value="alta">Alta</option>
+      <option value="media">Media</option>
+      <option value="baja">Baja</option>
+    </select>
+    <input type="text" id="taskAssigned" placeholder="Asignar a (user_id)" required />
+    <button type="submit">Agregar</button>
+  </form>
+
+  <h3>Invitar miembro</h3>
+  <form id="inviteForm">
+    <input type="text" id="inviteUser" placeholder="user_id a invitar" required />
+    <button type="submit">Invitar</button>
+  </form>
+
+  <button onclick="goBack()">Volver al dashboard</button>
+  <script src="js/project.js"></script>
+</body>
+</html>

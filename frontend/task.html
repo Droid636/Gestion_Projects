@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tarea</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2 id="taskTitle"></h2>
+  <p id="taskPriority"></p>
+  <p id="taskStatus"></p>
+
+  <h3>Subtareas</h3>
+  <ul id="subtaskList"></ul>
+
+  <h3>Agregar subtarea</h3>
+  <form id="subtaskForm">
+    <input type="text" id="subtaskTitle" placeholder="Título" required />
+    <button type="submit">Agregar</button>
+  </form>
+
+  <button onclick="goBack()">Volver al proyecto</button>
+  <script src="js/task.js"></script>
+</body>
+</html>

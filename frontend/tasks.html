@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tareas</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/tasks.js" defer></script>
+</head>
+<body>
+  <h1>Tareas del Proyecto</h1>
+
+  <h2>Agregar Tarea</h2>
+  <input id="task-title" placeholder="Título">
+  <select id="task-priority">
+    <option value="alta">Alta</option>
+    <option value="media">Media</option>
+    <option value="baja">Baja</option>
+  </select>
+  <input id="task-assigned" placeholder="Asignar a">
+  <button onclick="addTask()">Agregar</button>
+
+  <h2>Gráficas</h2>
+  <canvas id="statusChart"></canvas>
+  <canvas id="priorityChart"></canvas>
+
+  <h2>Lista de Tareas</h2>
+  <div id="task-list"></div>
+</body>
+</html>
